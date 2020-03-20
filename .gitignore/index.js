@@ -1,12 +1,12 @@
 const Discord = require('discord.js'); 
-const client = new Discord.Client(); 
+const bot = new Discord.Client(); 
 var prefix = "*"; 
-client.login(process.env.TOKEN); 
-client.on("ready", () => { console.log("Je suis prêt !"); 
+bot.login(process.env.TOKEN); 
+bot.on("ready", () => { console.log("Je suis prêt !"); 
 });
 
 
-client.on('message', message => {
+bot.on('message', message => {
   
   if (message.content === 'ping') {
     
@@ -14,4 +14,4 @@ client.on('message', message => {
   }
 });
 
-client.login(proess.env.TOKEN);
+bot.login(proess.env.TOKEN);
