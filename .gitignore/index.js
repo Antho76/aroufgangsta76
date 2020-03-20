@@ -1,8 +1,8 @@
 const Discord = require('discord.js'); 
 const client = new Discord.Client(); 
 var prefix = "*"; 
-client.login("Njg5ODEwMzQ5NDk0MzcwMzMy.XnSlzQ.byowPbf_DblFeJFzwYeHzLc1nTg"); 
-client.on("ready", () => { //Signifie que le bot à bien démarré console.log("Je suis prêt !"); 
+client.login(process.env.TOKEN); 
+client.on("ready", () => { console.log("Je suis prêt !"); 
 });
 
 
@@ -14,4 +14,4 @@ client.on('message', message => {
   }
 });
 
-client.login('Njg5ODEwMzQ5NDk0MzcwMzMy.XnSlzQ.byowPbf_DblFeJFzwYeHzLc1nTg');
+client.login(proess.env.TOKEN);
